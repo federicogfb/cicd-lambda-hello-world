@@ -1,0 +1,18 @@
+#CODE BUILD FILE.
+#FIRST RELEASE --- 0.2
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+  build:
+    commands:
+      - echo "Building Lambda function..."
+      - npm install --production
+      
+artifacts:
+  files:
+    - index.js
+    - node_modules/**/*
+    - package.json
