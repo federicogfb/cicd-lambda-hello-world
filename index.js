@@ -4,7 +4,7 @@ exports.handler = async (event) => {
     const response = {
         statusCode: 200,
         body: JSON.stringify({
-            message: 'Hello World from AWS Lambda!',
+            message: 'Lambda function from AWS code version number 2',
             requestId: uuidv4(),
             timestamp: new Date().toISOString()
         }),
